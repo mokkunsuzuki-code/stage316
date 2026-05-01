@@ -1,6 +1,5 @@
 {
-  "valid_keys": [
-    "test-key-123",
-    "demo-key-456"
-  ]
+  "test-key-123": "free",
+  "pro-key-456": "pro",
+  "enterprise-key-789": "enterprise"
 }
