@@ -1,50 +1,53 @@
-🚀 REMEDA Stage315 — Trust Score API with Sigstore Verification
+🚀 REMEDA Stage316 — Trust as a Paid API
 
 ## What is this?
 
-REMEDA Stage315 provides **verifiable trust decisions as an API**.
+REMEDA Stage316 is a **monetized trust verification API**.
 
-It evaluates a target system and returns:
+It evaluates systems and returns:
 
 - ✅ accept
 - ⚠️ pending
 - ❌ reject
 
-With a **Trust Score (0.0 - 1.0)** and **cryptographic verification**.
+with a **Trust Score (0.0 - 1.0)** and **Sigstore-based verification**.
 
 ---
 
 ## 🔥 Why it matters
 
-Modern systems lack **verifiable trust**.
+Trust is usually assumed.
 
-- Is this system authentic?
-- Was it tampered with?
-- Can we trust this output?
-
-👉 REMEDA answers these questions programmatically.
+REMEDA makes it **programmable and monetizable**.
 
 ---
 
-## 🧠 Core Features
+## 🧠 Features
 
 - Trust Score calculation
 - Decision engine (accept / pending / reject)
-- Sigstore verification (cosign)
-- API-key based access
-- JSON-based verification model
+- Sigstore verification (Pro plan)
+- API-key based SaaS
+- Rate-limited usage tiers
 
 ---
 
-## 🔐 Proof Layer
+## 💰 Pricing
 
-This system uses:
+### Free
+- 100 requests/day
+- No Sigstore verification
+- Reduced trust score
 
-- Sigstore (cosign)
-- Cryptographic signatures
-- Verifiable decision outputs
+### Pro
+- 10,000 requests/day
+- Full Sigstore verification
+- Maximum trust score
 
-👉 Not just "trust me" — **prove it**
+### Enterprise
+- Custom policies
+- Dedicated environment
+- QSP integration
 
 ---
 
@@ -64,42 +67,19 @@ curl -X POST http://127.0.0.1:3120/api/verify \
       "workflow": "github-actions"
     }
   }'
-Response
-{
-  "decision": "accept",
-  "score": 1.0,
-  "sigstore_verified": true,
-  "breakdown": {
-    "integrity": 1.0,
-    "execution": 1.0,
-    "identity": 1.0,
-    "time": 1.0,
-    "sigstore": 1.0
-  }
-}
-💰 Pricing (Planned)
-Free
-100 requests/day
-Limited verification
-Pro
-Full verification
-Sigstore included
-History access
-Enterprise
-Custom policies
-Dedicated environment
-QSP integration
+🔐 Monetization Model
+Free users get limited trust verification
+Paid users unlock full cryptographic proof
+
+👉 Trust becomes a paid feature
+
 🚀 Vision
-
-👉 Trust becomes programmable
-
-REMEDA aims to become:
 
 "Stripe for Trust"
 
 📦 Repository
 
-https://github.com/mokkunsuzuki-code/stage315
+https://github.com/mokkunsuzuki-code/stage316
 
 🛡 License
 
