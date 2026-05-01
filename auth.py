@@ -22,11 +22,4 @@ def is_valid_key(api_key):
 
 def get_plan(api_key):
     api_keys = load_api_keys()
-    return api_keys.get(api_key, "free")import json
-
-def load_keys():
-    with open("config/api_keys.json", "r") as f:
-        return json.load(f)["valid_keys"]
-
-def is_valid_key(key):
-    return key in load_keys()
+    return api_keys.get(api_key, "free")
